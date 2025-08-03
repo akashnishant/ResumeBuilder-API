@@ -22,6 +22,12 @@ app.post('/download-pdf', async (req, res) => {
     const pdfBuffer = await page.pdf({
       format: 'A4',
       printBackground: true,
+      margin: {
+        top: '40px',
+        bottom: '40px',
+        left: '40px',
+        right: '40px'
+      }
     });
 
     await browser.close();
