@@ -23,10 +23,10 @@ app.post('/download-pdf', async (req, res) => {
       format: 'A4',
       printBackground: true,
       margin: {
-        top: '40px',
-        bottom: '40px',
-        left: '40px',
-        right: '40px'
+        top: '50px',
+        bottom: '50px',
+        left: '50px',
+        right: '50px'
       }
     });
 
